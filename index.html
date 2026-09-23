@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漢字あそび</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="常用漢字表.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>ランダム常用漢字</h1>
+    <div id="kanji" data-state="loading" role="status" aria-live="polite">読み込み中…</div>
+    <div class="controls">
+      <label for="count-select">表示する文字数</label>
+      <span class="select-wrap"><select id="count-select" disabled>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select></span>
+      <button id="draw-button" type="button" disabled>ひく</button>
+    </div>
+  </main>
+</body>
+</html>
